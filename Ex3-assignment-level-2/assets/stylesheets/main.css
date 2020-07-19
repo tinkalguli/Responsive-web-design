@@ -68,7 +68,7 @@ table {
 /*====  global  ====*/
 
 html {
-    font-size: 1.6vw;
+    font-size: 20px;
 }
 
 img {
@@ -142,15 +142,12 @@ a {
 }
 
 .navbar a:not(.btn-join){
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-right: 2.2vw;
 }
 
 .logo {
     font-size: 1.8rem;
-}
-
-.navbar {
-    flex: 0 1 50%;
 }
 
 .btn {
@@ -223,7 +220,9 @@ a {
 
 .speciality-sec h2 {
     text-align: center;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.3rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
 }
 
 .speciality-art {
@@ -259,33 +258,24 @@ a {
     margin-bottom: 1rem;
 }
 
-.schedule-day {
-    font-family: var(--special-font);
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    flex: 0 1 12%;
+.schedule-col {
+    margin: 2rem 0;
+    position: relative;
 }
 
-.schedule-day li {
-    padding: 1.2rem 0;
+.schedule-time {
+    padding: 1.3rem 2rem;
     text-align: center;
     border: 0.1rem dashed var(--primary-color);
     border-radius: 50%;
+    font-family: var(--special-font);
+    color: var(--primary-color);
+    background: #fff;
+    font-size: 1.5rem;
 }
 
-.dash-line {
-    height: 2rem;
+.schedule-col span {
     display: block;
-    width: 50%;
-    border-right: 0.1rem dashed var(--primary-color);
-}
-
-.schedule-articles {
-    flex: 0 1 80%;
-}
-
-.schedule-articles-col {
-    margin: 2rem 0;
 }
 
 .schedule-art-img {
@@ -297,7 +287,7 @@ a {
 }
 
 .schedule-art-text {
-    flex: 0 1 75%;
+    flex: 0 1 55%;
     margin-right: 1rem;
 }
 
@@ -312,6 +302,16 @@ a {
 .sept-6 {
     background: var(--primary-color);
     color: #fff;
+}
+
+.dash::after {
+    content: '';
+    width: 3.85rem;
+    height: 15vh;
+    bottom: -4.5rem;
+    border-right: .1rem dashed var(--primary-color);
+    position: absolute;
+    z-index: -5;
 }
 
 /*====  Course section  ====*/
@@ -366,9 +366,17 @@ a {
     height: 5rem;
     padding: 0.3rem 1.5rem;
     border-radius: 50%;
+}
+
+.play-btn {
     position: absolute;
-    left: 45%;
-    top: 40%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*====  News section  ====*/
@@ -379,6 +387,7 @@ a {
 
 .news-sec h3 {
     text-align: center;
+    padding: 0 1.9rem;
 }
 
 .news-art {
@@ -421,9 +430,11 @@ a {
     color: #fff;
 }
 
-.quick-link {
-    flex: 0 1 70%;
+.quick-link a:not(.services) {
+    line-height: 2.5;
+    margin-right: 1rem;
 }
+
 
 .link-sec a {
     color: #8A8FA6;
@@ -445,8 +456,16 @@ a {
 
 @media screen and (max-width: 768px){
 
+    html {
+        font-size: 16px;
+    }
+
     .flex-between{
         flex-wrap: wrap;
+    }
+
+    .flex-col {
+        flex-direction: column;
     }
 
     .flex-100 {
@@ -458,6 +477,107 @@ a {
     }
 
     .margin-bottom {
+        margin-bottom: 3rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .margin-bottom-small {
+        margin-bottom: .7rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .course-col p {
+        padding-bottom: 0;
+    }
+
+    .box-shadow {
+        box-shadow: 0 0 3px #949DAA;
+        border-radius: 7px;
+    }
+
+    .padding-small {
+        padding: 1rem;
+    }
+
+    .dash::after {
+        display: none;
+    }
+
+    .schedule-time-small {
+        border: 0;
         margin-bottom: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .schedule-time span {
+        display: inline;
+        padding: 0 .5rem;
+    }
+
+    /*====  toggle menu  ====*/
+
+    .navbar {
+        display: none;
+    }
+
+    .check-btn {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 2rem;
+        height: 3px;
+        border-radius: 1px;
+        background: #fff;
+        margin: 3px 0;
+    }
+
+    .navbar li {
+        text-align: center;
+        margin: 5vh 0;
+        width: 100%;
+    }
+
+    #check:checked ~ .navbar {
+        display: block;
+        background: #000000c0;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 70vh;
+        border-radius: 5px;
+    }
+
+    #check:checked ~ .check-btn > .bar {
+        position: absolute;
+        right: 0;
+    }
+
+    #check:checked ~ .check-btn > .bar-1 {
+        transform: rotate(45deg);
+    }
+
+    #check:checked ~ .check-btn > .bar-2 {
+        display: none;
+    }
+
+    #check:checked ~ .check-btn > .bar-3 {
+        transform: rotate(135deg);
     }
 }

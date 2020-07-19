@@ -11,14 +11,18 @@
     <header class="header">
         <div class="container flex-between">
             <a class="logo" href="#">Alt Events</a>
+            <input type="checkbox" id="check">
+            <label class="check-btn" for="check">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
             <nav class="navbar">
-                <input type="checkbox" id="check">
-                <label class="check-btn" for="check"></label>
-                <ul class="flex-between">
+                <ul class="flex-between nav">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                     <li><a class="btn btn-join" href="#">Join Us</a></li>
                 </ul>
             </nav>
@@ -40,7 +44,7 @@
             </article>
         </section>
 
-        <section class="padding">
+        <section class="padding" id="about">
             <article class="container flex-between">
                 <div class="about-img flex-100 margin-bottom">
                     <img src="assets/images/03.png" alt="Live conference">
@@ -53,17 +57,17 @@
             </article>
         </section>
 
-        <section class="speciality-sec padding">
+        <section class="speciality-sec padding" id="services">
             <h2>Why You Should Join</h2>
             <div class="flex-between container">
-                <div class="speciality-container flex-100 margin-bottom">
+                <div class="speciality-container flex-100 margin-bottom-small">
                     <article class="speciality-art">
                         <span>1</span>
                         <h4>Network</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto nam optio dolores neque dicta maiores est maxime harum.</p>
                     </article>
                 </div>
-                <div class="speciality-container flex-100 margin-bottom">
+                <div class="speciality-container flex-100 margin-bottom-small">
                     <article class="speciality-art">
                         <span>2</span>
                         <h4>Great Speakers</h4>
@@ -82,54 +86,47 @@
 
         <section class="schedule-sec padding">
             <h3>Schedule</h3>
-            <div class="container flex-between">
-                <ul class="schedule-day">
-                    <li class="sept-6"><span>06</span><br><span>Sept</span></li>
-                    <span class="dash-line"></span>
-                    <li><span>07</span><br><span>Sept</span></li>
-                    <span class="dash-line"></span>
-                    <li><span>08</span><br><span>Sept</span></li>
-                    <span class="dash-line"></span>
-                    <li><span>09</span><br><span>Sept</span></li>
-                </ul>
-                <div class="schedule-articles">
-                    <article class="flex-between schedule-articles-col">
-                        <div class="schedule-art-img">
-                            <img src="assets/images/04.jpg" alt="People sitting in a event">
-                        </div>
-                        <div class="schedule-art-text">
-                            <h4>Digital World Event Conversation</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
-                        </div>
-                    </article>
-                    <article class="flex-between schedule-articles-col">
-                        <div class="schedule-art-img">
-                            <img src="assets/images/05.jpg" alt="Some design card">
-                        </div>
-                        <div class="schedule-art-text">
-                            <h4>Web Designing Conversation</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
-                        </div>
-                    </article>
-                    <article class="flex-between schedule-articles-col">
-                        <div class="schedule-art-img">
-                            <img src="assets/images/06.jpg" alt="A men sitting in front of a computer">
-                        </div>
-                        <div class="schedule-art-text">
-                            <h4>Web Development Conversation</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
-                        </div>
-                    </article>
-                    <article class="flex-between schedule-articles-col">
-                        <div class="schedule-art-img">
-                            <img src="assets/images/07.jpg" alt="Two People's feet">
-                        </div>
-                        <div class="schedule-art-text">
-                            <h4>Digital Marketing Conference</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="container anei">
+                <article class="flex-between schedule-col dash box-shadow padding-small">
+                    <time class="sept-6 schedule-time flex-100 padding-small schedule-time-small box-shadow"><span>06</span><span>Sept</span></time>
+                    <div class="schedule-art-img flex-100">
+                        <img src="assets/images/04.jpg" alt="People sitting in a event">
+                    </div>
+                    <div class="schedule-art-text flex-100">
+                        <h4>Digital World Event Conversation</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
+                    </div>
+                </article>
+                <article class="flex-between schedule-col dash box-shadow padding-small">
+                    <time class="schedule-time flex-100 flex-100 schedule-time-small box-shadow"><span>07</span><span>Sept</span></time>
+                    <div class="schedule-art-img flex-100 flex-100">
+                        <img src="assets/images/05.jpg" alt="Some design card">
+                    </div>
+                    <div class="schedule-art-text flex-100 flex-100">
+                        <h4>Web Designing Conversation</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
+                    </div>
+                </article>
+                <article class="flex-between schedule-col dash box-shadow padding-small">
+                    <time class="schedule-time flex-100 schedule-time-small box-shadow"><span>08</span><span>Sept</span></time>
+                    <div class="schedule-art-img flex-100">
+                        <img src="assets/images/06.jpg" alt="A men sitting in front of a computer">
+                    </div>
+                    <div class="schedule-art-text flex-100">
+                        <h4>Web Development Conversation</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
+                    </div>
+                </article>
+                <article class="flex-between schedule-col box-shadow padding-small">
+                    <time class="schedule-time flex-100 schedule-time-small box-shadow"><span>09</span><span>Sept</span></time>
+                    <div class="schedule-art-img flex-100">
+                        <img src="assets/images/07.jpg" alt="Two People's feet">
+                    </div>
+                    <div class="schedule-art-text flex-100">
+                        <h4>Digital Marketing Conference</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque magnam illo soluta dolorem, aliquam. Spernatur cupiditate similique voluptatem.</p>
+                    </div>
+                </article>
             </div>
             <div class="btn-schedule">
                 <a class="btn" href="#">Download Schedule</a>
@@ -139,24 +136,24 @@
         <section>
             <div class="course padding">
                 <div class="flex-between container">
-                    <div class="course-col">
+                    <div class="course-col flex flex-100 margin-bottom-small box-shadow">
                         <i class="fas fa-microphone"></i>
-                        <label>20+</label>
+                        <label class="order-1">20+</label>
                         <p>Great Speakers</p>
                     </div>
-                    <div class="course-col total-topic">
+                    <div class="course-col total-topic flex flex-100 margin-bottom-small">
                         <i class="fas fa-lightbulb"></i>
-                        <label>50+</label>
+                        <label class="order-1">50+</label>
                         <p>Total Topic</p>
                     </div>
-                    <div class="course-col">
+                    <div class="course-col flex flex-100 margin-bottom-small box-shadow">
                         <i class="fas fa-users"></i>
-                        <label>300+</label>
+                        <label class="order-1">300+</label>
                         <p>Participants</p>
                     </div>
-                    <div class="course-col">
+                    <div class="course-col flex flex-100 margin-bottom-small box-shadow">
                         <i class="fas fa-comments-dollar"></i>
-                        <label>20+</label>
+                        <label class="order-1">20+</label>
                         <p>Sponsors</p>
                     </div>
                 </div>
@@ -164,7 +161,7 @@
             <div class="padding">
                 <div class="container video-sec">
                     <img class="video-img" src="assets/images/01.png" alt="Audience">
-                    <i class="fas fa-play"></i>
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
                 </div>
             </div>
         </section>
@@ -173,19 +170,19 @@
             <h3>Our Latest News</h3>
             <div class="container">
                 <div class="flex-between padding">
-                    <article class="news-art flex-100 margin-bottom">
+                    <article class="news-art flex-100 margin-bottom box-shadow padding-small">
                         <img src="assets/images/08.png" alt="Two Pencil">
                         <h5>How to build a great portfolio as a beginner developer</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias sunt cumque quia libero at quo, adipisci voluptatum deserunt, provident doloremque officiis ut modi amet ipsam quam, obcaecati explicabo in.</p>
                         <a href="#">Read More</a>
                     </article>
-                    <article class="news-art flex-100 margin-bottom">
+                    <article class="news-art flex-100 margin-bottom box-shadow padding-small">
                         <img src="assets/images/09.png" alt="A cup and some books">
                         <h5>4 common solution while using Git and how to solve them</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias sunt cumque quia libero at quo, adipisci voluptatum deserunt, provident doloremque officiis ut modi amet ipsam quam, obcaecati explicabo in.</p>
                         <a class="primary-color" href="#">Read More</a>
                     </article>
-                    <article class="news-art flex-100">
+                    <article class="news-art flex-100 box-shadow padding-small">
                         <img src="assets/images/10.png" alt="A boy is teaching something two girl">
                         <h5>Basic Unix command that you should know</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias sunt cumque quia libero at quo, adipisci voluptatum deserunt, provident doloremque officiis ut modi amet ipsam quam, obcaecati explicabo in.</p>
@@ -196,10 +193,10 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <section class="container">
-            <div class="flex-between footer-links padding">
-                <div class="logo-svg">
+            <div class="flex-between footer-links padding flex-col">
+                <div class="logo-svg margin-bottom-small">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="100%" height="auto" viewBox="0 0 137 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
@@ -235,15 +232,15 @@
                         </g>
                     </svg>
                 </div>
-                <section class="link-sec flex-between">
-                    <div class="quick-link">
+                <section class="link-sec flex-between flex-col">
+                    <div class="quick-link margin-bottom-small">
                         <h5>Quick Link</h5>
                         <nav>
                             <ul class="flex-between">
                                 <li><a href="#">Program</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><a class="services" href="#">Services</a></li>
                             </ul>
                         </nav>
                     </div>
