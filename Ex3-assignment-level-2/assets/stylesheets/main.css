@@ -166,7 +166,7 @@ a {
 
 .hero-sec {
     color: #fff;
-    padding-top: 6.4rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
     background: linear-gradient(#3629b0cc, #3629b0cc), url("../images/01.png") 0 100% no-repeat;
     background-size: cover;
@@ -484,8 +484,12 @@ a {
         text-align: center;
     }
 
+    .logo-svg {
+        width: 35%;
+    }
+
     .margin-bottom-small {
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
     }
 
     .flex {
@@ -525,10 +529,6 @@ a {
 
     /*====  toggle menu  ====*/
 
-    .navbar {
-        display: none;
-    }
-
     .check-btn {
         display: flex;
         flex-direction: column;
@@ -552,16 +552,19 @@ a {
         width: 100%;
     }
 
-    #check:checked ~ .navbar {
-        display: block;
+    .navbar {
+        display: none;
         background: #000000c0;
         position: absolute;
-        left: 50%;
+        left: 40%;
         top: 0;
-        bottom: 0;
         right: 0;
         height: 70vh;
         border-radius: 5px;
+    }
+
+    #check:checked ~ .navbar {
+        display: block;
     }
 
     #check:checked ~ .check-btn > .bar {
