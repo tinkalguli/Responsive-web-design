@@ -207,4 +207,50 @@ To write a media query we just have to take a break point and then inside that w
 
 ##### CSS Breakpoints to Create Responsive Layout
 
-CSS breakpoints are the points where the content responds according to the device width, allowing the best possible way to show the layout to the user. But now comes a big question `how to choose breakponts` . For that we should take such a way that covers all the device. The ideal option is to choose breakpoints based on the content. This will allow you to simply add breakpoints where your content needs adjustment. This will keep your media query lot simpler and manageable.
+CSS breakpoints are the points where the content responds according to the device width, allowing the best possible way to show the layout to the user. But now comes a big question `how to choose breakponts` . For that we should take such a way that covers all the device. The ideal option is to choose breakpoints based on the content. This will allow you to simply add breakpoints where your content needs adjustment. This will keep your media query lot simpler and manageable. 
+
+Typical device breakpoints widely used:
+
+*Extra small devices (phones, 600px and down)*
+
+```
+ @media screen and (max-width: 600px) {
+    ...
+  }
+```
+
+*Small devices (portrait tablets and large phones, 600px and up)*
+
+```
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    ...
+  }
+```
+
+*Medium devices (landscape tablets, 768px and up)*
+
+```
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    ...
+  }
+```
+
+*Large devices (laptops/desktops, 992px and up)*
+
+```
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    ...
+  }
+```
+
+*Extra large devices (large laptops and desktops, 1200px and up)*
+
+```
+@media only screen and (min-width: 1200px) {
+    ...
+  }
+```
+These are the five common groups that cover all the devices.
+
+>We should always try to define a breakpoint where your content breaks and needs to be restructured. It should be always based on your content, not devices.
+
