@@ -2,15 +2,15 @@
 
 Responsive web design is an approach to develop all screen-size versions of your websites.The websites should worked in any divice so that users can open the website from any device . For that our website should be responsive. The responsive web design is accomplished by making the layouts responsive and adaptive.
 
-> *Responsive:* Responsive layout that reacts quickly and positively to any change. The responsive layouts are also known as flexible layouts, which will have fluidity. If the viewport width changes, the layout will also change fluidly. Flexible layout covers two things which is "flexible layout" and "flexible media".
+> ***Responsive:*** Responsive layout that reacts quickly and positively to any change. The responsive layouts are also known as flexible layouts, which will have fluidity. If the viewport width changes, the layout will also change fluidly. Flexible layout covers two things which is "flexible layout" and "flexible media".
 
-> *Adaptive:* The adaptive layouts changes based on a new purpose or condition. In CSS "media queries" are used to conditionally apply CSS rules.
+> ***Adaptive:*** The adaptive layouts changes based on a new purpose or condition. In CSS "media queries" are used to conditionally apply CSS rules.
 
-So the responsive web design is broken into three main components: *flexible layouts*,  *flexible media*, and *media queries*.
+So the responsive web design is broken into three main components: **flexible layouts**,  **flexible media**, and **media queries**.
 
 ## Flexible Layouts
 
-Flexible layout or responsive layout respond quickly and fluidly to any change. We can create a flexible layout by creating the flexible container. For that we have to use relative units of length which is percentage(%), viewport width, viewport height etc.
+Flexible layout or responsive layout respond quickly and fluidly to any change. We can create a flexible layout by creating the flexible container. For that we have to use relative units of length which is percentage(%), viewport width(vw), viewport height(vh) etc.
 
 ## Flexible Media
 
