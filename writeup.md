@@ -343,7 +343,9 @@ By default, the `user-scalable` value is `yes`. However, if you want to turn off
 
 *Never forget to apply this viewport meta tag in your document.*
 
-#### ***Responsive font-size :*** Now we know that how to make responsive the containers and the page responsive but we should keep in mind that we have to make the fonts flexible. For that we can use relative units like `view width(vw)` for the font size but it will make the font size very small in the mobile device(`desktop-first approach`) or it will make the font size very large in the large device(`mobile-first approach`).So we can use absolute units. If we use pixel value then we have to initialize font-size in every `break-point`. For this problem we have some really helpful units which is `rem` and `em`.
+#### ***Responsive font-size :***
+
+Now we know that how to make responsive the containers and the page responsive but we should keep in mind that we have to make the fonts flexible. For that we can use relative units like `view width(vw)` for the font size but it will make the font size very small in the mobile device(`desktop-first approach`) or it will make the font size very large in the large device(`mobile-first approach`).So we can use absolute units. If we use pixel value then we have to initialize font-size in every `break-point`. For this problem we have some really helpful units which is `rem` and `em`.
 
 ##### Rem
 
