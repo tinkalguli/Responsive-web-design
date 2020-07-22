@@ -341,11 +341,11 @@ The `maximum-scale` tells the browser that to which point the user can scale or 
 
 By default, the `user-scalable` value is `yes`. However, if you want to turn off the zooming you can set the value to `no`. Turning off the zooming ability is not a good idea. It harms the accessibility, usability, prevents disable people from viewing the website as they desire.
 
-***Never forget to apply this viewport meta tag in your document.***
+*Never forget to apply this viewport meta tag in your document.*
 
->*Responsive font-size :* Now we know that how to make responsive the containers and the page responsive but we should keep in mind that we have to make the fonts flexible. For that we can use relative units like `view width(vw)` for the font size but it will make the font size very small in the mobile device(`desktop-first approach`) or it will make the font size very large in the large device(`mobile-first approach`).So we can use absolute units. If we use pixel value then we have to initialize font-size in every `break-point`. For this problem we have some really helpful units which is `rem` and `em`.
+#### ***Responsive font-size :*** Now we know that how to make responsive the containers and the page responsive but we should keep in mind that we have to make the fonts flexible. For that we can use relative units like `view width(vw)` for the font size but it will make the font size very small in the mobile device(`desktop-first approach`) or it will make the font size very large in the large device(`mobile-first approach`).So we can use absolute units. If we use pixel value then we have to initialize font-size in every `break-point`. For this problem we have some really helpful units which is `rem` and `em`.
 
-#### Rem
+##### Rem
 
 The `rem` is always related to the root elememt's `font-size` i.e. `html`. For example:
 
@@ -396,7 +396,7 @@ section {
 
 In the above example when the viewport will reduce to `768px` then the `font-size` and `padding` of the `section` will be reduce with related to the `html`'s `font-size` i.e. `font-size: 8px` and  `padding: 32px`.
 
-#### Em
+##### Em
 
 The `em` is always related to the some element's font-size. If the font-size of the element is not available then it will related to the parent elememt's `font-size`. For example:
 
